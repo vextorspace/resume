@@ -1,0 +1,36 @@
+name: Compile LaTeX
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the repository
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Step 2: Install TeX Live
+      - name: Install TeX Live
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y texlive-full
+
+      # Step 3: Run pdflatex to compile the .tex file
+      - name: Compile LaTeX document
+        run: |
+          pdflatex -interaction=nonstopmode -halt-on-error DouglasRonneResume.tex
+
+      # Step 4: Upload the compiled PDF as an artifact
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: compiled-pdf
+          path: DouglasRonneResume.pdf
