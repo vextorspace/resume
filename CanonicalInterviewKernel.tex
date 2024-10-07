@@ -1,0 +1,290 @@
+\documentclass[letter,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{ebgaramond}
+\usepackage{textcomp}
+\geometry{left=1in, right=1in, top=1in, bottom=1in}
+
+
+\begin{document}
+
+\section{Introduction}
+Hello, and thank you for considering me for this position. I just wanted to tell you I found this a very interesting interview to work on. I have tried to complete it quickly and honestly yet still to a certain quality. However I may have left a spelling error or two in, and have not precisely tracked all my references. I believe this is in the spirit of what you were asking of me.
+
+Sincerely, me
+
+\section{Engineering experience}
+
+\subsection{Describe a skill or knowledge you acquired recently that has been impactful for you. Why did you make this investment? What has the outcome been?}
+I have been studying legacy code and techniques for managing it for a number of years. Recently I had a breakthrough when I read the book ``Growing Object Oriented Software, Guided By Tests''. It took Test Driven Development which I have been using for some time and expanded it. It always felt like there was a ``And Then Magic Happens'' step that took the overall big picture requirements and allowed you to break it up into a lot of little steps. Most practitioners seemed to pretend that the design happened magically with no effort. This was an epiphany for me and has led to me being a lot more productive when I am programming.
+
+I made this investment because a project I had created had become legacy code. It was our flagship CAD software we gave away, and had been modified and grown by many different engineers over many years. The entropy of the code was reduced and safety was increased enough that it became possible to make changes again. This was a process that took a little while and was not a sudden miraculous change but rather a gradual change.
+
+\subsection{What new skill would you like to learn? Why do you think this is important or timely or interesting? Why do you think you will be good at it?}
+I want to learn Rust better. I believe it will be a pivotal language in the future. I have worked through an udemy course and plan on taking a couple more as well as searching out some rust open source projects to start contributing to. I will also start playing with my own projects. I have never struggled to learn a new language so I believe it will be relatively easy to master.
+
+\subsection{What kinds of software projects have you worked on before? Which operating systems, development environments, languages, databases?  We are not simply looking for a checklist - please describe what you have worked with, and what your level of engagement with those technologies has been.}
+I have worked on signal processing on FPGAs in VHDL and C. I also developed the algorithms for this in Matlab. I have programmed 2 full golf card motor controllers in assembly and C on a TI F2808 DSP. I used ubuntu as my dev platform, and a mixture of python and makefiles for my build system, and emacs for my editor. I used python to build an interface to the first controller and C\# on windows for the second controller.
+
+I have used Java to create a desktop CAD software package that runs on Windows, Linux, and Mac (\href{http://www.protocasedesigner.com}{www.protocasedesigner.com}). It was specialized CAD software for making sheet metal enclosures for electronics. I used a mixture of windows, ubuntu linux, and mac osx to develop since it needed to run on all of these. It started at Java 1.6 in 2009 and when I left the company was at Java 11. I ran a team that took that software and created automated tools for our engineers to use to create work instructions for our manufacturing team. I also created a SOAP reader for a piece of equipment we used and made a microservice of the reader so other services in our quoting and engineering could use it. I have created software that allowed us to analyze pricing changes on the fly with all the data we already had in Kotlin, and created a piece of vision software that identified parts on a printer bed and identified their location and rotation so that we could print on them without lining them up in Kotlin with openCascade using Intellij on Ubuntu.
+
+I have used Linux from Scratch, Debian, Gentoo, Archlinux and Ubuntu (starting around 10.0 I think...). I use lubuntu for my primary OS these days using the bspwm windows manager. I am familiar with Windows as well. I have developed in Netbeans, Microsoft Visual Studio, Emacs with terminal, Eclipse, Intellij, Microchip's MPlab, and many others.
+
+\subsection{Would you describe yourself as a high quality coder? Why?}
+I would describe myself as a high quality coder for several reasons. I have been coding since 1983 when I bought my first computer at a garage sale at the age of 8. I had a knack for code from an early age. I made many mistakes and learned a lot. I studied math and computer science at university, and then spent the last 24 years of my career as a systems engineer, software developer, and R\&D Manager. I had projects that lasted 14 years so I learned what mistakes bite you later, and how to take messy code that has suffered from the entropy of time and multiple hands, and make changes safely without rewriting the whole thing. (My favorite books are ``Working Effectively with Legacy Code'', ``Your Code as a Crime Scene'', ``Refactoring'', ``Refactoring to Patterns'', ``Growing Object Oriented Software, Guided By Tests'', ``Test Driven Development'', and ``Tidy First'').
+
+I have also had the privelage to work with many incredible mentors in my career. I have mentored a few young developers and engineers as well. However I can look at code I wrote a while ago and think that it wasn't very good. I believe this just means I have learned a lot in the meantime as I never stop trying to get better.
+
+\subsection{Would you describe yourself as an architect of resilient software? If so, why, and in which sort of applications?}
+I would describe myself as an architect of resilient software. I have created several full applications ground up including the motor controller for an electric golf cart. This of course had to be resilient software - it had to not fail for software reasons and if it failed for hardware reasons needed to fail in a safe fashion as lives could be in danger.
+
+I have also created a full-featured sheet metal CAD package that has been in use for 14 years now. It has been bery resilient in terms of design - it has been modified and extended by an several different groups and was designed to never lose a customer's data which it has not.
+
+Relience needs to be considered in a context - can it never crash? Can it never lose data? Must it deal with other software or hardware that we do not have control over? Must it be able to be changed?
+
+\subsection{What software products have you yourself led which shipped many releases to multiple customers? What was your role?}
+The CAD software I created from scratch in 13 months. This was then extended with many features and abilities by me for a few years, then a team I led. It went through a major redesign of the user interface under my management (I had become the manager of all software at that time) and was extended to become our internal work instructions generation tool with our engineering department as a customer and as a work instructions 3D display tool with our sheet metal shop as the customer. The external customers number in the thousands and the number of releases must have been around 50. I have also visited customers and teased out what features that would be the most impactful to them. The primary features that customers loved were the kind that gave them confidence that what they ordered would be correct the first time. Measurement tools, an axis system that projected from the 3D to the 2D, relative measurements, the ability to print out a calibrated 1:1 scale image of a face.
+
+\subsection{What is your most senior role in a software engineering organisation? Describe your span of control, and the diversity of products, functions and teams you led. Are you actively seeking a management role or do you prefer to be an individual contributor?}
+I ran the R\&D department at protocase with a span of control up to 40 engineers and software developers at the end. I split this into teams of course because one person cannot easily and effectively manage that many people. I was on the upper management team and sat with the CEO and President weekly at a minimum. Half our team was software. About $\frac{1}{3}$ of those were involved heavily in our custom ERP software we wrote in house. Since we ran a mass custom sheet metal shop, the software didn't exist that would do what we needed at the time so we wrote it. It allowed us to customize our software to our business rather than our business to our software. About $\frac{1}{2}$ were in charge of our Protocase Designer software which was custom CAD software. The remainder worked with our production engineers to develop tools based on our Protocase Designer software to make their jobs easier and less error prone, as well as integrating into SolidWorks and various machine software.
+
+The other side of the department was a mix of industrial engineers and mechanical engineers (and engineering students) who maintained and optimized our mass custom sheet metal production shop. We handled upwards of 1000 separate jobs (usually small volume) per week, every one unique.
+
+I then trained up a new manager and she took over and I returned to software because I was going remote for a while and the company was not a remote company.
+
+I am interested in either a management role or as an individual contributor. I have kept my programming skills current and am currently learning Rust. I am also a continuous learner listening to podcasts and audiobooks on communication, conflict, and many other topics on my walks in the morning.
+
+\subsection{What is your proudest success as an engineering leader?}
+I accepted a couple of ``trouble'' junior employees into my department and worked with them to develop their emotional intelligence and technical skills. They became rockstar employees that everone came to depend on. As a leader that is about the pinacle of achievement in my opinion. That said I have let a couple of trouble employees go because they did not have good attitudes. It really depends on the employee and the environment and whether they are compatible.
+
+\subsection{Outline your thoughts on open source software development. What is important to get right in open source projects? What open source projects have you worked on? Have you been an open source maintainer, on which projects, and what was your role?}
+I have used open source software but have not had the privelage of working much on it (I did provide a couple of script fixes back around 2001 I think it was for the amd x86\_64 platform on Linux From Scratch). I have been employed by private companies that did not contribute, and was not able to dedicate time to open source. I did attend a keyboards and gravy event for the zed editor (which is a blazing fast written in rust editor) and spent a day working with a couple of the founders. I would like to continue pitching in there and I would love the opportunity to give back however!
+
+\subsection{How comprehensive would you say your knowledge of a linux distribution is, from the kernel up? Can you share your experiences in working with Linux distributions? Please elaborate on your familiarity with low-level system architecture, runtimes and Linux distro packaging? How have you gained this knowledge?}
+My linux knowledge began back in 1998 when I first got fed up with Microsoft Windows and the standard template library. I tried out mandrake linux, suse linux, corel linux, and settled on Linux From Scratch around 2000 or so. Running through the Linux From Scratch cookbook several times to get things right (and when drives crashed) led me to a familiarity with compiling the kernel and modules, packaging, and the fundamental tools. I eventually switched to Gentoo linux then Ubuntu when it was stable. I think I started with Ubuntu around version 4.10. I tried out ArchLinux a couple of times too but always returned to Ubuntu (specifically I now use lubuntu with bspwm as a window manager).
+
+I also have made sure that the software I have developed has always been linux-friendly. I first offered an install.sh then added a .deb package. I never did add it to any repositories because our sales team felt it was very important for people to download the software from our website.
+
+\subsection{Describe any experience you have with low-level embedded systems engineering, on Linux or other embedded operating systems}
+I have created two motor controllers from the ground up on TI DSPs - the F2808. I used interrupts for the safety critical stuff, and a round-robin event loop for the rest. I intend to work on a sourdough feeder on a raspberry pico using an embedded linux real-time os for practice.
+
+\subsection{Outline your experiences with quality in software development. What practices have you found to be more effective to drive improvements in quality?}
+Using a code complexity metric (my preference is either the Cognitive Complexity metric, or the sum of all the indentation in a file from ``Your Code as a Crime Scene'') goes a long way. When you combine that with the number of times a file has been changed in recent history from your git repo, this tells you where your bugs are going to come from. This is where you should really spend your time. It is worth actually refactoring this intentionally to knock their danger levels down. Otherwise, if you don't understand something write a test for it. Then refactor it so that you would not have needed to write the test in the first place. Then make your change.
+
+If you are writing new code, and it isn't just a quick spike to see what way you are going to head, use Behavior Driven Development at a high level and Test Driven Development at the low level to create your software (\href{http://www.growing-object-oriented-software.com/}{``Growing Object Oriented Software, Guided By Tests''}). It usually doesn't go any slower, and you don't get stuck as easy. When you go away and come back you remember where you were. Other people learn what it was that you intended when they run the tests and modify things. It preserves the code quality and prevents entropy (as long as you are decent at writing tests).
+
+Pair programming is also very useful. It allows knowledge sharing and prevents getting stuck, and usually gets much cleaner code that does not suffer as much code entropy. However I have learned to call this practice ``Working Together'' because management expects engineers to work together a lot but the ``Pair Programming'' name seems to make them think they are getting less work done. I think this is because they think of programming as similar to building a building. It is more like planning a city. When you start, the city is small, just a few houses. Then as needs change, things get added, removed, etc. Before long you have a big mess on your hands if you don't learn to handle the change well and make things easy to change.
+
+
+Other important practices are keeping commits atomic (one change per commit), frequently merging in to master, and whenever you are struggling with direction try throwing out the last few commits. You must talk to each other a lot, maybe even do pair programming. Speak with the customer often enough to understand their pain points and use the tools you build, use lint checkers and code quality metrics, and use a circuit breaker (found in \href{https://basecamp.com/shapeup/2.2-chapter-08#the-circuit-breaker}{Basecamp's Shape-up mini-book}).
+
+Finally, I do know I have seen first-hand that CI/CD greatly improves throughput and cuts down on the occasional really difficult deploy that takes forever and causes a million bugs. I remind myself of Kent Beck's statement of Constantine's equivalence:
+\begin{equation}
+  Cost \approx Cost(change) \approx Cost(hard\ change) \approx Cost(coupling)
+\end{equation}
+
+Continuous Integration and Automated Testing usually prevents you from going down a rabbit hole of really bad coupling causing you really big costs of change. \href{https://substack.com/@kentbeck/p-142791879}{https://substack.com/@kentbeck/p-142791879}
+
+
+
+\subsection{Outline your experiences with documentation in large software projects. What practices do you believe teams should follow? Why?  What do you consider to be some great examples of open source docs and why?}
+
+I am going to break this into two sections: documentation on code for developers and documentation of software for users.
+\subsubsection{Documenting code for software developers}
+I believe the code and tests should do most of the documentation. If you need documentation for a task, create it new on a whiteboard. The reason is that any document that encompasses the whole of the project is unreadable generally, and always seems to get out of date. And when you whiteboard up a structure you can leave out the bits that don't matter for what you are doing.
+
+There should be almost no comments - only for things out of the ordinary that you couldn't figure out how to make self documenting.
+
+There is a big caveat. If you are working in a high-risk high-cost-of-failure environment, then extra care should be taken (safety is more important than efficiency). This could include architecture documentation and API documentation that is always kept up-to-date by careful procedures that are always followed. However usually good testing and a set of Behavior Driven Development test cases combined with Test Driven Development Unit Tests do a much better job of documenting things in a way that never ends up out of date.
+
+For parts of the system that are fairly stable however I do find some UML diagrams useful. Also, for any complicated interactions a set of use case examples (preferably written into tests) are very helpful in talking to stakeholders. Timing diagrams also are very helpful. Speaking in examples is one of the most powerful way to get details out of the stakeholders.
+
+\subsubsection{Documentation of Software}
+When documenting software for users, there are at least three sorts of documentation: tutorials for general education which walk people through the software or subsection of the software and try to confer a general knowledge. Then there are howtos. These take a specific task and break it down into steps that can be repeated by the customer. Further there are reference guides that cover a lot of the important information around the software.
+
+I believe that a good webpage based written document with lots of screenshots and the occasional video or animated gif is excellent for tutorials and howtos. Of course built in documentation is really helpful too. One example of software that used to have incredible built-in help was google sketchup. I haven't used it in ages, but when I did play with it, there were animated gifs showing the mouse and buttons which very clearly showed how to draw all the shapes. It was brilliant!
+
+That said, you must write documentation that your user wants. So if they like videos, you must put out videos too.
+
+Now when something covers a physical skill such as woodworking, nothing beats videos for learning these skills (besides actual in-person instruction).
+
+For Reference work, Wikis are an amazing tool that can allow a lot of collaboration in the development of the knowledge pool. Care must be taken to keep them organized. Standards should be created and moderated.
+
+\subsubsection{What practices should teams follow?}
+Any important tutorial or how-to should be followed by getting a naive population of customers to follow the tutorial or howto. Their feedback should be taken into account. You cannot effectively judge what a person who doesn't know something can do.
+
+Also, keeping systems as simple as possible (avoiding premature optimization or speculative development) will help reduce the need for extensive documentation (as well as prevent bugs).
+
+\subsubsection{What are great examples of open source docs?}
+I've always been amazed at how easy it is these days to figure out how to do anything. For instance, if I want to install octave on ubuntu, I can search it and go to \href{https://ubuntuhandbook.org/index.php/2023/11/gnu-octave-8-4-0-released-ubuntu-ppa/}{https://ubuntuhandbook.org/index.php/2023/11/gnu-octave-8-4-0-released-ubuntu-ppa/} and find a good document that tells me everything I need to know. I might think it should be organized a little differently or whatever but it works. I can find everything I need there.
+
+\href{https://ubuntu.com/core}{https://ubuntu.com/core} is very clean, well organized and helpful. It also happens to be pleasing to the eye which is not necessary but is a really nice addition. It probably helps the choice to adopt ubuntu-core as it looks professional.
+
+
+\subsection{Outline your experiences with performance in software components. How do you ensure that your product performs optimally?}
+\subsubsection{Speed Performance}
+For starters, speed is almost never the issue in software. But when it is I have always had the best luck with logging systems for doing a binary search for the slow spots. This is because the systems are usually complicated and perhaps there are some microservices, event loops, concurrent processing, and render loops going on. I do not believe in just trying to make things faster without really identifying where the bottleneck is. You should never optimize before you have a speed problem as most optimizations make things harder to read. The exception is when things are slowed down by some unintended consequence (like reloading a file from disk every time you access an object). This is also easy to find with logs. The actual process of speeding things up is almost never anywhere near as difficult as finding what needs to be improved.
+
+The caveat here is that theer are certain kinds of products that users will use and need certain performance from. If you are providing a database, or an animator, or a real time system, then you will need a certain performance. This should be benchmarked and dealt with as above, but if you can improve the performance past the requirements that is great! The following things can be done:
+\begin{itemize}
+\item inline code and classes (note this will make things harder to maintain)
+\item remove all logging and copying
+\item optimize your algorithm for speed (no generic formula here, it will entirely depend on the problem)
+\item make usre you are solving problems as the architecture you are working on expects (fir filters on a TI-F2808 should not be optimized for example - the architecture offers a single flop add and accumulate so no other optimization is necessary or even possible)
+\item skip middle-ware when possible and deal directly with the low level abstractions.
+\end{itemize}
+
+\subsubsection{Memory footprint performance}
+For memory, it is extra important that we do not do un-necessary copies. Zero-copy decoding is a great technique for instance. Also we should pass references not values to any array, string, or class. This does expose us when doing concurrency so we should be careful in those sorts of situations. Also you have to be careful who has the ability to modify things. Sticking to conventions on function calls so that it is easy to understand what goes on in memory helps. Also we want to modularize as much as possible. As soon as you have about 3-4 lines of code copied anywhere, there should be a function call or object that wraps it. This is better for maintainability and testability usually too. Finally, you can always buy more memory! A machine that costs \$30,000 might sound expensive, but it is not as expensive as the time it might take to optimize a problem and maintain the optimized code.
+
+\subsection{Outline your thoughts on security in software engineering. How do you lead your engineers to improve their security posture and awareness?}
+I think you must know what the best practices in your industry are and follow them. Working with a partner on critical code really helps here - common sense is easier to come by when there are two heads working on something. There are also some good tools out there for analyzing your dependencies for any known vulnerabilities, and you should be using a lint checker for your language. Finally, know when you are working with something that could be compromising and take extra care. Security by obscurity is not good enough.
+
+\subsection{The Linux kernel is heavily entwined with the Git DVCS, can you describe your level of Git expertise?}
+I have been using GIT since 2006 or 2007 I do not quite recall. I preferred it over SVN because of the better branching support and support to an extent for renaming and directories. Since then I have decided I much prefer using trunk-based development but I still use git as I am so familiar with it. I do not usually need to do really difficult merges anymore due to better programming practices and smaller commits however. When I did have difficult merges I would use Semantic Merge which was a semantics aware merge tool far superior to any text-based merges. I do know how to make custom hooks though I have not done that in a while. Also, I have experience with CI/CD tools such as github and gitlab, plus jenkins.
+
+\subsection{Have you worked in real-time systems? In Linux or other RTOS, and if the latter, which one(s)? Can you elaborate on some of the challenges kernel real-time development faces, and your experiences with them?}
+I have created two motor controllers from the ground up on TI DSPs - the F2808. I used interrupts for the safety critical stuff, and a round-robin event loop for the rest. It was essentially a roll-your-own RTOS as the measurements were real time and if they got out of sync with time they became invalid and failure would occur. I am familiar with the concept of an RTOS but haven't actually used a vendor supplied one. I am familiar with Linux in general and usually do my development in Linux if possible. I also plan on creating a sourdough feeder using an embedded real-time os.
+
+\subsection{Please describe any experience you have working in operating system kernel internal components, Linux or other.  This can be device drivers, scheduler, network stack, etc, as long as it would be considered part of the core kernel.}
+I learned linux by following the \href{http://linuxfromscratch.org}{Linux From Scratch} website back in 2000 or so several times. I did end up contributing one patch to a script to allow x86\_64 to work though I cannot find the patch now.
+
+\subsection{How extensive is your experience with C? What type of software components have you used it in? What about C++? Why would you use one over the other?}
+I used C and assembly to write my motor controllers (see other answers). I have used C++ for some launchers and interop stuff with java calling openCV libraries. I also used it in several classes including a couple of Data Structures classes. I used C when doing embedded software on smaller processors because I could not afford the size of the C++ runtime. Now I would use Rust for that. C++ I would use in the past when I needed to interact with C++ code, have something that was pretty much guaranteed to run as long as it was packaged right, or do something with a lot of memory operations. Now I would use Rust for that.
+
+\subsection{How extensive is your experience of Python software engineering? How do you test Python applications? Outline the applications that you have led in Python, and your takeaways from that experience.}
+My first Python project was an interface to a motor controller to allow debugging and tuning. This was because it had a uniform interface for a serial port. I tested it simply by using it. My second project in Python was when I took over a proof-of-concept CAD software application written in python. I fixed several problems with it and added a lot of functionality. I would test it by creating smaller test programs that set up an environment and ran a bunch of code. Primitive integration tests really. I have since learned to make much better tests through a combination of Behavior Driven Development and Test Driven Development.
+
+\subsection{Describe any experience you have with Rust.}
+I have taken several classes and attended rustconf 2024. I have begun working on a sideproject as well but have just started on this. I have also begun contributing a little to the zed editor in rust, but again just started.
+
+\subsection{Describe any experience you have with Golang.}
+I have no experience with Golang. I have learned so many different programming languages over my career though that if I need to I will learn it quickly.
+
+\subsection{Have you ever worked directly with ACPI, BIOS, EFI, and/or Devicetree? Can you elaborate?}
+The closest I have come to this is the embedded work on the TIf2808 processer for the motor controller. However it was not computer BIOS, but rather microcontroller. I have encountered ACPI and EFI working with linux but have not done any programming with them or the devicetree.
+
+\subsection{What kind of packaging and container formats, such as debian or snap, have you created and/or maintained? Can you describe your experiences and challenges? This is actually working with the format to create packages, not simply consuming packages.}
+I have created and maintained custom install scripts, and deb packages. I also have made sure that the software I have developed has always been linux-friendly. I first offered an install.sh then added a .deb package. I never did add it to any repositories because our sales team felt it was very important for people to download the software from our website.
+
+The challenges really came from trying to have a single script creating and signing packages for Windows, Linux, and Mac. Mac requires the signing be done on a Mac, so we had to have a mac running in the background and sh to it to sign the mac package, and I was able to make the linux script call that one, and also sign the windows package. However frequently security requirements would change leading to changes in how signing was done, or what keys could be used on what platforms.
+
+\subsection{Kernel Engineering at Canonical is more heavily geared towards downstream backporting security updates, integrating vendor device support, packaging, and qualification of the Linux kernel rather than full-time upstream collaboration.  Can you describe how your prior experiences have prepared you for this sort of role?}
+Working through \textit{LinuxFromScratch.org} goes a long way towards understanding packaging and device support. I also worked with Gentoo linux and ArchLinux before deciding on Ubuntu because of its superior out of the box and driver performance.
+
+\section{Industry leadership experience}
+
+\subsection{Describe your speaking experience at industry events and conferences}
+I have not done this on a large scale. I would love the opportunity but the closest I have done besides my work experience as a Mathematics Instructor has been speaking to groups of students about our engineering tools at Protocase. I have also organized and run a hardware hackathon. I have also spoken at community technical events and lead lunch-n-learns for my team for about 10 years.
+
+\subsection{Are you a thought leader in any particular area of technology?}
+I don't believe so - that would be a huge claim to make. I am very familiar with several thought leaders - Uncle Bob, Martin Fowler, Kent Beck, Michael Feathers, Steve Freeman, Nat Pryce etc but what I am good at is seeing through fuzzy requirements and finding problems before they arise. I also am a strong advocate for several techniques that are maybe cutting edge.
+
+Perhaps I don't see myself as a thought leader because I surround myself with people who know more than myself and try to learn as much as possible from them.
+
+\subsection{Describe any experience working with startups. What did you draw from that experience that would be relevant for this application?}
+I spent 4 years working with a startup creating a couple of motor controllers for high powered golf carts. I learned a lot about what good enough is, and what risks are ok and what are not. I worked with an experienced electrical engineer who had started and run a couple of successful startups before. I also learned a lot about good engineering practices from him.
+
+My last job was with a near startup. They had grown to about 40 employees and were not quite making a profit when I joined. I helped steer company direction through the Socratic method - asking questions. I am not afraid to admit I do not know something and just ask. This allows many mistakes of ego are avoided. Egos seem to be involved in many failures in startups. In my first startup the electrical engineer believed in a new technology so much that he would not make a backup plan. When the technology didn't live up to its promise, the startup failed.
+
+\subsection{Describe any experience working in a public company. What is important for your colleagues to know about being a public company?}
+You fight a different kind of battle in a large public company. Middle management is not incentivized to speak truth to power, or to take risks. So you have to be an advocate for what you see as reality. Also, you must be a self advocate if you are a high performer or you will not get compensated as one. This is from my experience at Raytheon. I doubt all public companies are like that, I think it was a result of the vast size of the company more than anything.
+
+\section{Education}
+
+\subsection{How did you rank in your final year of high school in mathematics? Were you a top student? On what basis would you say that?}
+I did not finish high school, but I went immediately to college and finished with a Masters in Math top of my class with a 4.0/4.0. I was always a top student if not the top student in math and science. As a child we lived on a clam farm and had to dig clams in the middle of the night to eat. My father always told us ``If you don't want to do this your whole life, learn your math!''. So we all did. But I was also the top math student in my family which was tough competition!
+
+\subsection{How did you rank in your final year of high school, in your home language? Were you a top student? On what basis would you say that?}
+I was a decent student in english but I didn't become good at written (and indeed even spoken) language until working at Raytheon. I had an amazing mentor/ boss there who was one of the best engineers I have known, and also one of the best communicators. He understood people better than anyone I ever knew and taught me a lot. When I took over running the R\&D department at my last job I also started studying communication and conflict management. I read intensely on the subject and discussed it constantly with my bosses and coworkers. I took a few classes in this time as well.
+
+\subsection{Please state your high school graduation results or university entrance results, and explain the grading system used. For example, in the US, you might give your SAT or ACT scores. In Germany, you might give your scores out of a grading system of 1-5, with 1 being the best.}
+My SAT scores were 1560/1600. The breakdown was 800/800 in Math and 760/800 in English.
+
+\subsection{Can you make a case that you are in the top 5\% in your academic year, or top 1\%, or even higher? If so please outline that case. Make reference where possible to standardised testing results at regional or national level, or university entrance results. Please explain any specific grading system used.}
+In my university I certainly was. I scored the only perfect 4.0/4.0 in my Masters Degree. There were two other students who were vying with me for that spot but they lost out in a difficult Differential Geometry class the last term that I got an A in and they did not.
+
+When I took the SATs my scores for university entrance, I scored in the top 1\% in the nation.
+
+\subsection{What sort of high school student were you? Outside of class, what were your interests and hobbies? What would your high school peers remember you for?}
+In high school I was an ok student. I found the work not challenging or interesting. I got good grades but did not try hard enough. I did not feel challenged or held to any kind of standard. I loved shop class, welding class, electronics. I also loved the outdoors and hiking. People remember me as nice but quiet and awkward and being that kid with his nose in a book all the time.
+
+\subsection{Which university and degree did you choose? What other universities did you consider, and why did you select that one?}
+I went to Western Washington University for a Masters degree in Mathematics. I was able to take a lot of Computer Science courses as well. I had considered Harvey Mudd but decided I could not afford the tuition so I went to my local school instead. I also applied at MIT and Cal Tech but did not get accepted there despite my high SAT scores.
+
+\subsection{Overall, what was your degree result and how did that reflect on your ability? Please help us understand the grading system for your results.}
+In my last degree (Masters in Mathematics) I scored a perfect 4.0/4.0 and took the most difficult courses I could. I also scored in the top 20\% in the global Math Modeling Competition IM2C. It reflected well on my ability to learn and absorb knowledge. Particularly the understanding of why and how. I was not that good at rote memorization so had to lean on understanding concepts and being able to figure things out.
+
+\subsection{During all of your education years, from high school to university,  can you describe any achievements that were truly exceptional?}
+All the professors came to my thesis because they didn't understand the topic and wanted to learn it. It was on Frobenius's Theorem on non-conservative vector fields. Also placing in the top 20\% in the IM2C was a large achievement. I did all this while paying my own way through most of college and university.
+
+\subsection{What leadership roles did you take on during your education? Did you conceive of, and drive to completion, any initiatives outside of your required classwork?}
+During my education I was usually working so did not take a strong leadership role in a large sense. However I always ended up the default team leader for any group activity if there wasn't someone who came in to take the role. People always came to me for advice, perhaps because I worked in the Math Tutoring labs whenever I could, and perhaps because my unique upbringing gave me a wider set of experiences than most people get. This has always served me well because it gives me the ability to view things in a different light.
+
+I also took part in the IM2C international math modeling competition. We had a 3 day time period to answer the question ``Predict the effects of a 1km wide asteroid striking the earth''. Very broad. I was our team leader and got this done on time and we placed in the top 20\% in the world with our paper titled ``Oh Sheep''
+
+\section{Context}
+
+
+\subsection{Outline your thoughts on the mission of Canonical.}
+I like working on things that matter to people. As a service organization Canonical gets to do things that matter to a lot of people. I enjoy personal interactions with customers (even when things have gone poorly) because it really satisfies my need for a sense of purpose. The idea of making open source software and then providing service is a wonderful model. Firstly, it gives that open source software some stability. Ubuntu has been my favorite distribution for a long time because it is professional and dynamic. Easy to use, not overly bloated.
+
+The open source side also means that it gets a lot of eyes on it. This reduces the chance of major security holes or deadly bugs.
+
+I also love that the company has a strong belief in documentation, but gives good guidance on how it is done. Too often everyone is left to document in their own way. Knowing what the expectations are and how they must be met makes it much easier to be consistent!
+
+\subsubsection{What is it about the company's purpose and goals which is most appealing to you?}
+
+\subsubsection{What do you see as risky or mistaken in our offering, positioning or strategy?}
+Well Canonical has been around for quite a while, and is still here. That is the best proof that in general the offering, positioning, and strategy are good. As far as risk, I believe there is a lot of risk in AI as a ton of work is being done there by many many people so a good chance what you do won't end up used. But at the same time the payoff can be high so it would be foolish not to get in on it too.
+
+In the past there was the unity desktop environment which I believed was a mistake at the time, but it was a mistake Microsoft and Mac also made and have since backpedaled on to a certain extent as well.
+
+Finally, the biggest risk is that people will not associate the name Canonical with the commercial services they offer.
+
+\subsection{Who are Canonical's key competitors, and how should Canonical set about winning?}
+RedHat, Oracle, Microsoft, and Apple seem to be the primary competitors. As well as in house users of open source linux. However I don't think the little company internal users are the real competitors as they aren't really in the market for much support. I think the problem with Canonical's positioning, is that it does center around Ubuntu, which is an awesome and successful distribution. However it is seen as a consumer distribution I believe. So either Canonical needs to focus on consumer users of linux and figure out how to monetize them more, or enterprise users need to be convinced that Canonical is a serious contender in enterprise environments. This is probably where more of the bang for the buck is. I think it would take a lot of money invested to compete with Microsoft and Apple in the consumer market for paid stuff (does the world really want another app store? I don't know, maybe it does?)
+
+For enterprise targets I would think Canonical needs to put more marketing and sales effort into things like Juju. Getting some high-profile customers on board who are willing to sing the praises of Canonical would go a long way towards this.
+
+\subsection{How should Canonical set about winning, commercially?}
+From looking through Canonical's offerings, I would guess there are two major income streams. One is support for ubuntu and other Canonical products through ubuntu pro, and the other is more like contract work for companies wanting to do something specific with opensource who don't have the internal expertise to do this. Not knowing how successful Canonical is besides not having gone out of business, I would say it is more of a sales and marketing issue. Canonical has a broad range of products and there should be a huge market out there. Canonical's products work well and add value.
+
+If I wanted to understand how to improve my marketing and sales performance, I would be getting engineers to go with sales to talk to the customers we have so they better understand the needs of customers. I would also look at how Fedora and Oracle manage their reputation. We know they are for profit groups who are doing a community service but have something strong to offer rather than community groups that do this work out of the goodness of their hearts. So if we need work done in their area of expertise we would think to approach them.
+
+It would also be interesting to see if there was a support level Canonical could offer for sale for personal use of ubuntu for those that didn't want windows or mac but weren't strong enough technically to feel comfortable jumping into linux. Like a \$20 support license.
+
+Finally could Canonical start some certification courses and charge for them?
+
+\subsection{What would you most want to change about Canonical?}
+I would add Behavior Driven Development and Test Driven Development as core skills that need developing as they reduce the cost of hard change which is the most expensive and unpredictable part of software development. I do not believe these things should be used in a absolutist zealot fashion, just more than they are at most companies.
+
+I would also like to get Canonical recognized up there with RedHat and Oracle.
+
+\subsection{Why do you most want to work for Canonical?}
+I need three things out of a career.
+\begin{itemize}
+\item a good remote job that lets me travel now and then and pays well enough
+\item a strong technical challenge
+\item the ability to make a contribution that matters to someone
+\end{itemize}
+I believe Canonical meets these criteria very well. On a side note, I prefer that my development environment is a linux terminal with emacs and some text based build tools. If the problems occasionally dip into a math problem that is great too! I really enjoy working with others and do not see remote work as a way to avoid interaction. More than anything it is a way to be flexible in where you live and not spend most of your free time commuting.
+
+\subsection{What would you most want to change about Canonical?}
+It looks from the website and my experience that the company's presence and direction are engineer led. This is great, but it could probably use a bit more customer-centric influence in the marketing. At my last job I went on a lot of sales trips with the sales and marketing teams to meet customers and help the sales and marketing teams develop a sense of how to interact with customers who were engineers. It also gave me great insight into what sorts of problems our customers had, both with our products so I could make them better, and with their own jobs so I could create new features and products that could help them.
+
+In general with a technical company, if you want to increase the value of the company you get more return for your money by increasing spending on marketing and sales in my experience.
+
+Now obviously I don't want to come across as knowing better than the company, nor is my intent to criticize the sales or marketing teams. I am not privy to the inner workings of Canonical so this is just my thoughts from what impressions I can get. Still, I love this sort of discussion and would be happy to engage in a deeper discussion about this if I am chosen for the role once I know the lay of the land. In this case there might be room for some education of the public in the services Canonical offers.
+
+\subsection{What gets you most excited about this role?}
+I would love to work with something that has such an impact on the world. The linux kernel is so important today! I would love a chance to help out with its development.
+
+Also, Canonical seems to be a great company to work for from what I read on the web. The growth potential for me as a software developer is enticing.
+
+Finally, it seems that Canonical is big enough to have an impact, but small enough that I could have an impact on it.
+\end{document}

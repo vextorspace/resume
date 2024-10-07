@@ -1,0 +1,51 @@
+\documentclass[letter,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{ebgaramond}
+\usepackage{textcomp}
+\usepackage{titlesec}
+
+\geometry{left=.75in, right=.75in, top=.75in, bottom=.75in}
+
+
+\titleformat{\section}
+    {\normalfont\Large\bfseries}
+    {}{0pt}
+    {\titlerule[1pt]\MakeUppercase}
+    [\titlerule]
+    
+    
+\newenvironment{noindentblock}{%
+  \begin{list}{}{%
+    \setlength{\leftmargin}{.25in} % Set the indent width
+    \setlength{\rightmargin}{0in} % Set the right margin (optional)
+    \setlength{\topsep}{0pt} % Remove additional vertical space
+    \setlength{\parsep}{0pt} % Remove additional vertical space
+  }
+  \item[]}{\end{list}}
+
+
+\begin{document}
+
+%======================
+%   Header
+%======================
+\begin{center}
+    {\Huge \textbf{Douglas Ronne}}\\
+    \vspace{2mm}
+    1068 Fir St SE| Olympia, WA, 98501\\
+    \href{mailto:vextorspace@gmail.com}{vextorspace@gmail.com} | (360) 797-2009\\
+    \href{https://www.linkedin.com/in/vextorspace}{linkedin.com/in/vextorspace} | \href{https://github.com/vextorspace}{github.com/vextorspace}
+\end{center}
+
+Dear Hiring Manager,
+
+I have always loved space, being a reader of Heinlein and Asimov from a young age. While I have accepted that I will not myself go to space I would love to be involved. I am a highly talented software developer who has worked on a variety of projects, and I have a great intuition. I prefer working on projects that have a real effect on the world and would love to work with you.
+
+Sincerely,
+--Douglas Ronne
+\end{document}

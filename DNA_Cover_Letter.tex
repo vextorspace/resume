@@ -1,0 +1,51 @@
+\documentclass[letter,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{ebgaramond}
+\usepackage{textcomp}
+\usepackage{titlesec}
+
+\geometry{left=.75in, right=.75in, top=.75in, bottom=.75in}
+
+
+\titleformat{\section}
+    {\normalfont\Large\bfseries}
+    {}{0pt}
+    {\titlerule[1pt]\MakeUppercase}
+    [\titlerule]
+    
+    
+\newenvironment{noindentblock}{%
+  \begin{list}{}{%
+    \setlength{\leftmargin}{.25in} % Set the indent width
+    \setlength{\rightmargin}{0in} % Set the right margin (optional)
+    \setlength{\topsep}{0pt} % Remove additional vertical space
+    \setlength{\parsep}{0pt} % Remove additional vertical space
+  }
+  \item[]}{\end{list}}
+
+
+\begin{document}
+
+%======================
+%   Header
+%======================
+\begin{center}
+    {\Huge \textbf{Douglas Ronne}}\\
+    \vspace{2mm}
+    1068 Fir St SE| Olympia, WA, 98501\\
+    \href{mailto:vextorspace@gmail.com}{vextorspace@gmail.com} | (360) 797-2009\\
+    \href{https://www.linkedin.com/in/vextorspace}{linkedin.com/in/vextorspace} | \href{https://github.com/vextorspace}{github.com/vextorspace}
+\end{center}
+
+Dear Hiring Manager,
+
+I am often shocked at the poor access to our own health information and DNA testing. It is something that has shown so much promise and can do so much good for the world! I am excited to help a company that is doing great things to bring this to more people and would love to be part of it.
+
+Sincerely,
+--Douglas Ronne
+\end{document}
